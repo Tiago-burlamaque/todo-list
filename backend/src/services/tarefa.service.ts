@@ -24,14 +24,6 @@ class TarefaService {
         return tarefas;
     }
 
-    async pegarTarefaPorId(id: number) {
-        const tarefa = await tarefaRepository.buscarTarefaPorId(id)
-
-        if (!tarefa) throw new Error('Tarefa não encontrada')
-
-        return tarefa
-    }
-
     async editarTarefa(id: number, titulo: string, descricao: string) {
         this.validarCampos(titulo, descricao)
 
