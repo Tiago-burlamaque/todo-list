@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { tarefaService } from "../services/tarefa.service";
-import { tarefaRepository } from "../repositories/tarefaRepository";
+import { tarefaService } from "../services/tarefa.service.js";
+import { tarefaRepository } from "../repositories/tarefaRepository.js";
 
 interface Tarefa {
     titulo: string

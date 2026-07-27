@@ -1,5 +1,5 @@
-import { usuarioRepository } from "../repositories/usuarioRepository";
-import { usuarioSerivce } from "../services/usuario.service";
+import { usuarioRepository } from "../repositories/usuarioRepository.js";
+import { usuarioSerivce } from "../services/usuario.service.js";
 import { Request, Response } from "express";
 import jwt from 'jsonwebtoken'
 
