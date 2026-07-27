@@ -4,7 +4,7 @@ import { authMiddleware } from './middleware/authMiddleware.js'
 import { usuarioRouter } from './routers/usuario.route.js'
 import { tarefaRouter } from './routers/tarefa.route.js'
 
-export const app = express()
+const app = express()
 
 app.use(cors())
 app.use(express.json())
@@ -15,3 +15,5 @@ app.get('/', (req: Request, res: Response) => {
 
 app.use('/auth', usuarioRouter)
 app.use('/tarefa', authMiddleware, tarefaRouter)
+
+export default app;
