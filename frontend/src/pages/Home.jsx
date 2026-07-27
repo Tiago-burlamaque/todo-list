@@ -47,7 +47,7 @@ export default function Home() {
 
     try {
       const res = await axios.put(
-        `http://localhost:3000/tarefa/${idEditar}`,
+        `https://todo-list-gamma-sooty-24.vercel.app/tarefa/${idEditar}`,
         {
           titulo: tituloEditar,
           descricao: descricaoEditar,
@@ -74,7 +74,7 @@ export default function Home() {
 
     try {
       const res = await axios.put(
-        `http://localhost:3000/tarefa/pendente/${id}`,
+        `https://todo-list-gamma-sooty-24.vercel.app/tarefa/pendente/${id}`,
         {
           status: "Pendente"
         },
@@ -101,7 +101,7 @@ export default function Home() {
 
     try {
       const res = await axios.put(
-        `http://localhost:3000/tarefa/concluir/${id}`,
+        `https://todo-list-gamma-sooty-24.vercel.app/tarefa/concluir/${id}`,
         {
           status: "Concluida"
         },
@@ -132,7 +132,7 @@ export default function Home() {
 
   async function buscarTarefas() {
     try {
-      const res = await axios.get('http://localhost:3000/tarefa', {
+      const res = await axios.get('https://todo-list-gamma-sooty-24.vercel.app/tarefa', {
         params: {
           titulo,
           descricao
@@ -155,7 +155,7 @@ export default function Home() {
     setLoadingCriar(true);
 
     try {
-      const res = await axios.post('http://localhost:3000/tarefa', {
+      const res = await axios.post('https://todo-list-gamma-sooty-24.vercel.app/tarefa', {
         titulo: titulo,
         descricao: descricao
       },
@@ -176,7 +176,7 @@ export default function Home() {
     setLoadingExcluir(id);
 
     try {
-      const res = await axios.delete(`http://localhost:3000/tarefa/${id}`, {
+      const res = await axios.delete(`https://todo-list-gamma-sooty-24.vercel.app/tarefa/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

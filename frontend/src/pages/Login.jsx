@@ -26,7 +26,7 @@ export default function Login() {
         e.preventDefault()
         setCarregando(true)
         try {
-            const res = await axios.post('http://localhost:3000/auth/login', {
+            const res = await axios.post('https://todo-list-gamma-sooty-24.vercel.app/auth/login', {
                 email: email,
                 senha: senha
             })
@@ -51,7 +51,7 @@ export default function Login() {
         e.preventDefault()
         setCarregando(true)
         try {
-            await axios.post('http://localhost:3000/auth/cadastro', {
+            await axios.post('https://todo-list-gamma-sooty-24.vercel.app/auth/cadastro', {
                 nome: nomeRegister,
                 nick_name: nickNameRegister,
                 email: emailRegister,
