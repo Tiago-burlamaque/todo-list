@@ -6,8 +6,12 @@ import { tarefaRouter } from './routers/tarefa.route.js'
 
 const app = express()
 
-app.use(cors())
 app.use(express.json())
+app.use(cors({
+    origin: "https://smarthealth-city.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    credentials: true
+}))
 
 app.get('/', (req: Request, res: Response) => {
     res.send('hello world!')
