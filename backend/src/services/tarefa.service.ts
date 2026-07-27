@@ -1,4 +1,4 @@
-import { tarefaRepository } from "../repositories/tarefaRepository";
+import { tarefaRepository } from "../repositories/tarefaRepository.js";
 
 class TarefaService {
     validarCampos(titulo: string, descricao: string) {

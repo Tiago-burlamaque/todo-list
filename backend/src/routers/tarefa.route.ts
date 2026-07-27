@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { tarefaController } from "../controllers/tarefa.controller";
+import { tarefaController } from "../controllers/tarefa.controller.js";
 
 export const tarefaRouter = Router()
 

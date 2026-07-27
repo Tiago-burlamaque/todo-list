@@ -1,4 +1,4 @@
-import { usuarioRepository } from "../repositories/usuarioRepository"
+import { usuarioRepository } from "../repositories/usuarioRepository.js"
 import bcrypt from 'bcrypt'
 
 class UsuarioService {

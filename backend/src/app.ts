@@ -1,8 +1,8 @@
 import express, { Request, Response } from 'express'
 import cors from 'cors'
-import { authMiddleware } from './middleware/authMiddleware'
-import { usuarioRouter } from './routers/usuario.route'
-import { tarefaRouter } from './routers/tarefa.route'
+import { authMiddleware } from './middleware/authMiddleware.js'
+import { usuarioRouter } from './routers/usuario.route.js'
+import { tarefaRouter } from './routers/tarefa.route.js'
 
 export const app = express()
 
